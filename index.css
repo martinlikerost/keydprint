@@ -1,0 +1,9 @@
+.topnav{
+    width: 100%;
+    padding: 0;
+    
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS' sans-serif;
+    background-image: linear-gradient(to left #3D348B,#7678ED,#F7B801,#F18701,#F35B04)
+}
