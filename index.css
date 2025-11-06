@@ -1,6 +1,7 @@
 .topnav{
     width: 100%;
     padding: 7px;
+    text-align: center;
 }
 .topnav, .article{
     margin-bottom: 14px;
@@ -12,28 +13,35 @@ body{
     background-size: 100%; background-repeat: no-repeat;
    
 }
+.adverts{
+    border-style: solid; border-color: rgb(247, 184, 1); padding: 0%;
+}
 .reklamebilde{
     width: 100%;
 }
 .infobilde{
     width: 50%; float: left;
 }
+.logo{
+    width: 5%;
+}
 .article{
     width: 60%;
     margin: auto;
     padding: 20px;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     width: 80%; background-color: white; text-align: center; margin: auto; font-size: 200%;
     margin-bottom: 1%;
+    border-radius: 5px;
+}
+h1, h2, h3, h4, h5, h6{
         border-top-style: solid;
     border-bottom-style: solid;
 }
 p{
-    width: 80%; background-color: white; text-align: center; margin: auto; font-size: 150%;
-    border-top-style: double;
     border-bottom-style: double;
-    margin-bottom: 1%;
+    border-top-style: double;
 }
 .navbtn{
     padding: 14; 
