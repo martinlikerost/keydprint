@@ -1,84 +1,149 @@
-.topnav{
-    width: 100%;
-    padding: 7px;
-    text-align: center;
-}
-.topnav, .article, .btnmen{
-    margin-bottom: 14px;
-    background-image: linear-gradient(145deg, rgb(241, 135, 1) , rgb(243, 91, 4));
-    margin: auto;
-}
-body{
-    font-family: 'Calibri', sans-serif;
-    background-image: linear-gradient(145deg, rgb(61, 52, 139) , rgb(118, 120, 237));
-    background-size: 100%; background-repeat: no-repeat;
-   
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .adverts{
-    border-style: solid; border-color: rgb(247, 184, 1); padding: 0%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(145deg, rgb(241, 135, 1), rgb(243, 91, 4));
+    padding: 20px;
 }
 .reklamebilde{
     width: 100%;
 }
-.infobilde{
-    width: 50%; float: left;
+/* Body */
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: rgb(61, 52, 139);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.logo{
-    width: 5%;
+
+/* Top Navigation */
+.topnav {
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    display: flex;              /* Make items hug each other */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Align vertically */
+    gap: 20px;                  /* Space between items */
+    background-image: linear-gradient(145deg, rgb(241, 135, 1), rgb(243, 91, 4));
+    margin-bottom: 30px;
 }
-.article{
+
+.webcontent{
+    height: 100%;
+}
+
+/* Remove ugly link colors */
+.topnav a,
+.topnav a:visited,
+.topnav a:hover,
+.topnav a:active {
+    color: white;               /* Keep text white */
+    text-decoration: none;      /* Remove underline */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo img {
+    width: 50px; /* Adjust logo size */
+}
+
+/* Article */
+.article {
     width: 60%;
     margin: auto;
     padding: 20px;
+    background-image: linear-gradient(145deg, rgb(241, 135, 1), rgb(243, 91, 4));
+    margin-bottom: 14px;
 }
-h1, h2, h3, h4, h5, h6, p{
-    width: 80%; background-color: white; text-align: center; margin: auto; font-size: 200%;
+
+/* Headings and Paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    margin: auto;
     margin-bottom: 1%;
     border-radius: 5px;
 }
-h1, h2, h3, h4, h5, h6{
-        border-top-style: solid;
+
+h1, h2, h3, h4, h5, h6 {
+    border-top-style: solid;
     border-bottom-style: solid;
+    font-size: 200%;
 }
-p{
+
+p {
     border-bottom-style: double;
     border-top-style: double;
+    font-size: 150%;
 }
-.navbtn{
-    padding: 14; 
-}
-br{
-    height: 2px
-}
-* {
-box-sizing: border-box; /*i dont understand this but it works for fixing the uncentered*/
-}
-.btnmen{
-    width: 80%; height: 20%;
+
+/* Button Menu */
+.btnmen {
+    width: 80%;
+    margin: auto;
     padding: 5px;
-    
+    background-image: linear-gradient(145deg, rgb(241, 135, 1), rgb(243, 91, 4));
+        text-align: center;
+    display: flex;              /* Make items hug each other */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Align vertically */
 }
-.btnbox{
-    width: 15%; background-color: white;
-    border-top-style: double;
-    border-bottom-style: double;
-    margin-bottom: 1%;
+
+/* Button Box */
+.btnbox {
+    width: 15%;
+    background-color: white;
+    border-style: outset;
+    margin: auto;
     padding: 5px;
 }
-.btnbox p, .btnbox p:visited{
+/*the <p> element turned proffesional*/
+.btnbox p{
     border-style: inset;
-    padding: 5px;
-    border-color: rgb(209, 206, 206);
-    color: black;
+    border-color: rgb(158, 158, 158);
+    margin-left: 7; margin-right: 7;
 }
+/*top button which is just button box but on the top of the page*/
 .topbtn{
-    margin: 0; margin-left: auto;
+    border-color: rgb(241, 135, 1);
+    border-style: outset;
 }
 .btnbox p:hover{
+    border-color: rgba(158, 158, 158, 0.5);
+}
+.topbtn:hover{
+    border-color: rgba(241, 135, 1, 0.5);
+}
+
+/* Button Style */
+.about-btn {
+    border: 3px outset purple;  /* Keep purple border */
+    padding: 10px;
+    color: purple;
+    font-size: 18px;
+    background-color: white;
+    margin: 0;
+}
+
+/* Remove link effects inside button */
+.btnbox a,
+.btnbox a:visited {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+/* Hover effect */
+.btnbox p:hover {
     border-color: rgb(158, 158, 158);
     background-color: rgb(209, 206, 206);
-}
-.btnbox a, .btnbox a:visited{
-  text-decoration: none;
-  outline: none;
 }
